@@ -1,0 +1,160 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f2;
+  line-height:1;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.btn{
+  margin: 0 5px 0 0
+}
+h1, h2, h3, h4, h5{font-weight: 600; font-size: 1.5rem; padding-bottom: .5rem;}
+header{ margin: 1rem 0;}
+h1{font-size: 1.8rem; font-weight: bolder;}
+h3{font-size: 1.3rem;}
+h4{font-size: 1rem;}
+
+.row{width:100%; position: relative;}
+.container{max-width:90%; width:100%; position: relative; margin: 0 auto; min-height: 100vh; }
+.aside{width:240px; float: left; padding:1rem; background-color: #fff;}
+.aside .title{border-bottom: 1px grey solid; text-align: center; font-weight: normal; margin: 0 2rem;}
+.aside .lyc li{float: left; margin: 0 0 1rem 1rem; width: 90px; }
+.aside .lyc li .badge, .aside .lyc li .active{border-radius: 5px; background-color: #c5e09b; padding: .5rem; text-align: center; display: block; text-decoration: none; color:#000}
+.aside .lyc li .active{background-color: #7cba01;}
+.space-container .card-deck, 
+.aside .lyc {list-style: none; 
+  padding: 0;
+  margin: 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+}
+.aside .lyc{display: inline-block; margin:1rem auto;}
+
+.space-container{ margin-left:21%; position: relative;}
+.space-container .card-deck > li {width: 20%; padding: 1rem; position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  margin: 0 0 .8rem .8rem;
+}
+.card-deck figure{ min-height:100px; background-color: #f2f2f2; text-align: center; margin: 0; padding: 1rem;}
+.card-deck figure IMG{max-width: 100%;}
+.space-container .card-deck .img{display: block;}
+.card-deck .title{color: #333e8c;font-weight: bolder; margin: 10px 0 10px 0;}
+.card-deck p{margin: 0 0 5px 0; line-height: 1.5;}
+.center-text{text-align: center;}
+.create-form{margin-top:10px;}
+strong{font-weight: bolder;}
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  opacity: 1; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 20% auto 0 ;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@media screen and (max-width: 700px) {
+  h1{text-align:  center;}
+  .container{max-width: 90%;}
+  .aside{ margin: 0 auto 1rem; float: inherit;}
+  .space-container{width: 260px; float: inherit; margin: 0 auto;}
+  .space-container .card-deck{ display: inline;; margin: 0 auto;}
+  .space-container .card-deck li{width:87%; margin: 0 0 1rem 0;}
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  h3{font-size: 13pt;}
+  p, li{ font-size: 11pt;}
+  .container{max-width: 90%;}
+  .space-container { margin-left: 260px;}
+  .space-container .card-deck > li {width:35%}
+}
+
+@media only screen 
+and (min-width : 701px) 
+and (max-width : 1024px) {
+  h3{font-size: 13pt;}
+  p, li{ font-size: 11pt;}
+  .container{max-width: 90%;}
+  .space-container { margin-left: 260px;}
+  .space-container .card-deck > li {width:35%}
+}
+
+@media only screen and (min-width : 1440px) {
+  .container{max-width: 1440px;}
+}
+
+footer{margin: 1rem auto; text-align: center; padding: 1rem; bottom: 0; position: relative; }
