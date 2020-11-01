@@ -1,7 +1,5 @@
 # SPACE X 
 first for pipeline creation for react website (I was never used this before so spent some time on it :) )
- - heroku buildpacks -a '<appname>'
- - buildpacks:set mars/create-react-app -a '<appname>'
  
  setup for ie11
   - Install react-app-polyfill using simple npm install
@@ -17,7 +15,7 @@ first for pipeline creation for react website (I was never used this before so s
   }
  delete .cache folder from your node_modules
  
- Heroku: https://xtspacexapp.herokuapp.com/
+ AWS: https://master.d2zezqbolevzxx.amplifyapp.com/
  
 created this React app through Create-React-App Boilerplate. 
 As Per given documents, the comoponents is created
